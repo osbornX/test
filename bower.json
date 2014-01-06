@@ -1,0 +1,68 @@
+{
+  "name": "wei",
+  "version": "0.0.0",
+  "dependencies": {
+    "artTemplate": "aui/artTemplate#2.0.2",
+    "bootbox": "*",
+    "bootstrap": "*",
+    "font-awesome": "*",
+    "font-awesome-legacy": "font-awesome#3.2.1",
+    "jquery": "2.0.*",
+    "jquery-legacy": "jquery#~1.*",
+    "masonry": "http://masonry.desandro.com/masonry.pkgd.min.js",
+    "flexslider": "*",
+    "jquery-mobile-bower": "*",
+    "jquery-timeago": "~1.3.0",
+    "jquery.loadJSON": "http://jquery-load-json.googlecode.com/svn/trunk/scripts/jquery.loadJSON.js",
+    "jquery-form": "~3.46.0",
+    "bootstrap-daterangepicker": "*",
+    "jquery-validation": "*",
+    "seajs": "seajs/seajs#~2.1.1",
+    "jquery.appendGrid": "hkalbertl/jquery.appendGrid",
+    "jquery-ui": "*",
+    "requirejs": "*",
+    "DataTables": "1_10_wip",
+    "jquery-bbq": "cowboy/jquery-bbq"
+  },
+  "devDependencies": {},
+  "exportsOverride": {
+    "artTemplate": {
+      "": "*.js"
+    },
+    "bootbox": {
+      "": "bootbox.js"
+    },
+    "bootstrap": {
+      "dist/css": "dist/css/*",
+      "dist/fonts": "dist/fonts/*",
+      "dist/js": "dist/js/*"
+    },
+    "font-awesome": {
+      "css": "css/*",
+      "fonts": "fonts/*"
+    },
+    "font-awesome-legacy": {
+      "css": "css/*",
+      "font": "font/*"
+    },
+    "jquery-timeago": {
+      "": "jquery.timeago.js",
+      "locales": "locales/*"
+    },
+    "seajs": {
+      "dist": "dist/*"
+    },
+    "jquery-ui": {
+      ".": "."
+    },
+    "requirejs": {
+      "": "require.js"
+    },
+    "jquery-bbq": {
+      "": "*.js"
+    }
+  },
+  "resolutions": {
+    "jquery": "2.0.*"
+  }
+}

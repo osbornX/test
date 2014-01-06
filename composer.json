@@ -1,0 +1,13 @@
+{
+    "require": {
+        "php": ">=5.3.0",
+        "wei/wei": "dev-master",
+        "twinh/alipay-mobile": "*",
+        "twinh/tenpay-mobile": "*"
+    },
+    "autoload": {
+        "psr-0": {
+            "": ""
+        }
+    }
+}
