@@ -1,0 +1,31 @@
+.group-panel .panel-heading {
+
+    box-shadow: inset 0 1px 1px rgba(0,0,0,0.05);
+}
+.group-panel li {
+    font-size: 14px;
+    border: none;
+}
+.group-panel li:hover {
+    background-color: #f0f0f0;
+}
+.group-panel li div {
+    display: none;
+}
+.group-panel li:hover div {
+    display: block;
+}
+.group-panel a {
+    color: #444;
+}
+.group-panel a:hover {
+    text-decoration: none;
+}
+.group-panel li i {
+    font-size: 16px;
+    color: #666;
+    padding: 0 2px;
+}
+.group-panel li i:hover {
+    color: #222;
+}
