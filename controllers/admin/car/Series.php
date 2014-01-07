@@ -48,7 +48,7 @@ class Series extends \controllers\admin\Base
     public function create($req)
     {
         wei()->carSeries()->save($req);
-        return $this->suc('保存成功');
+        return $this->suc();
     }
 
     public function edit($req)
