@@ -60,6 +60,9 @@
     },
     "jquery-bbq": {
       "": "*.js"
+    },
+    "bootstrap-daterangepicker": {
+        ".": "."
     }
   },
   "resolutions": {
