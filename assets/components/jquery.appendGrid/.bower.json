@@ -1,0 +1,14 @@
+{
+  "name": "jquery.appendGrid",
+  "homepage": "https://github.com/hkalbertl/jquery.appendGrid",
+  "version": "1.2.0",
+  "_release": "1.2.0",
+  "_resolution": {
+    "type": "version",
+    "tag": "1.2.0",
+    "commit": "9e9ee176fb9bddd32e6f98307d846fa8b6c05acf"
+  },
+  "_source": "git://github.com/hkalbertl/jquery.appendGrid.git",
+  "_target": "*",
+  "_originalSource": "hkalbertl/jquery.appendGrid"
+}
