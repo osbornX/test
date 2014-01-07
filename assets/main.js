@@ -14,7 +14,9 @@ require.config({
         'jquery-bbq': 'components/jquery-bbq/jquery.ba-bbq',
         'ueditor': 'components/ueditor/lang/zh-cn/zh-cn',
         'ueditor.all': 'components/ueditor/ueditor.all.min',
-        'ueditor.config': 'ueditor'
+        'ueditor.config': 'ueditor',
+        'moment': 'components/bootstrap-daterangepicker/moment.min',
+        'bootstrap-daterangepicker': 'components/bootstrap-daterangepicker/daterangepicker'
     },
     shim: {
         'datatables.bootstrap': {
