@@ -18,7 +18,6 @@ class Setting extends Base
 
             $fieldSets[$name][] = $setting;
         }
-
         return get_defined_vars();
     }
 
