@@ -100,10 +100,26 @@ class Uploader
             $this->stateInfo = $this->getStateInfo( "TYPE" );
             return;
         }
-        $this->fullName = $this->getFolder() . '/' . $this->getName();
+        /*$this->fullName = $this->getFolder() . '/' . $this->getName();
         if ( $this->stateInfo == $this->stateMap[ 0 ] ) {
             if ( !move_uploaded_file( $file[ "tmp_name" ] , $this->fullName ) ) {
                 $this->stateInfo = $this->getStateInfo( "MOVE" );
+            }
+        }*/
+        $this->fullName = $this->getFolder() . '/' . $this->getName();
+        if ( $this->stateInfo == $this->stateMap[ 0 ] ) {
+            if(!defined('SAE_TMP_PATH')){
+                if ( !move_uploaded_file( $file[ "tmp_name" ] , $this->fullName ) ) {
+                    $this->stateInfo = $this->getStateInfo( "MOVE" );
+                }
+            } else {
+                $st = new SaeStorage();
+                $url = $st->upload('upload', date('Ym') . '/' . $this->getName(), $file[ "tmp_name" ]);
+                if(!$url){
+                    $this->stateInfo = $this->getStateInfo( "MOVE" );
+                } else {
+                    $this->fullName = $url;
+                }
             }
         }
     }
@@ -232,16 +248,34 @@ class Uploader
      * 按照日期自动创建存储文件夹
      * @return string
      */
+    /*private function getFolder()
+    {
+        $pathStr = $this->config[ "savePath" ];
+        if ( strrchr( $pathStr , "/" ) != "/" ) {
+            $pathStr .= "/";
+        }
+        $pathStr .= date( "Ymd" );
+        if ( !file_exists( $pathStr ) ) {
+            if ( !mkdir( $pathStr , 0777 , true ) ) {
+                return false;
+            }
+        }
+        return $pathStr;
+    }*/
+
     private function getFolder()
     {
         $pathStr = $this->config[ "savePath" ];
         if ( strrchr( $pathStr , "/" ) != "/" ) {
             $pathStr .= "/";
         }
-        $pathStr .= date( "Ym" );
-        if ( !file_exists( $pathStr ) ) {
-            if ( !mkdir( $pathStr , 0777 , true ) ) {
-                return false;
+        $pathStr .= date( "Ymd" );
+        if(!defined('SAE_TMP_PATH'))
+        {
+            if ( !file_exists( $pathStr ) ) {
+                if ( !mkdir( $pathStr , 0777 , true ) ) {
+                    return false;
+                }
             }
         }
         return $pathStr;
