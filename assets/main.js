@@ -16,7 +16,10 @@ require.config({
         'ueditor.all': 'components/ueditor/ueditor.all.min',
         'ueditor.config': 'ueditor',
         'moment': 'components/bootstrap-daterangepicker/moment.min',
-        'bootstrap-daterangepicker': 'components/bootstrap-daterangepicker/daterangepicker'
+        'bootstrap-daterangepicker': 'components/bootstrap-daterangepicker/daterangepicker',
+        'bootstrap-datetimepicker' : 'components/bootstrap-datetimepicker/js/bootstrap-datetimepicker.min',
+        'jquery-validation': 'components/jquery-validation/jquery.validate',
+        'jquery-validation-zh': 'components/jquery-validation/localization/messages_zh'
     },
     shim: {
         'datatables.bootstrap': {
@@ -27,6 +30,9 @@ require.config({
         },
         'ueditor.all': {
             deps: ['ueditor.config']
+        },
+        'jquery-validation-zh': {
+            deps: ['jquery-validation']
         }
     }
 });

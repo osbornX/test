@@ -1,4 +1,4 @@
-define('wechat/user', function(require, exports, module){
+define(function(require, exports, module){
     $('#export-csv').click(function(){
         var dt = $('#record-table').dataTable();
         window.location = $.appendUrl(dt.fnSettings().ajax.url, {page: 1, rows: 99999, format: 'csv'});

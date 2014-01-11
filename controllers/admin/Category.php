@@ -24,6 +24,10 @@ class Category extends Base
             $categories->andWhere('name LIKE ?', '%' . $req['search'] . '%');
         }
 
+        if ($req['type']) {
+            $categories->andWhere(array('type' => $req['type']));
+        }
+
         $data = array();
         foreach ($categories as $category) {
             $data[] = $category->toArray() + array(

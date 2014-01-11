@@ -53,7 +53,7 @@ define(['jquery', 'jquery-form', 'loadJSON'], function(){
                 + '</a>'
                 + '<div class="tools tools-bottom">'
                 + '  <a href="javascript:;">'
-                + '    <i class="icon-remove red"></i>'
+                + '    <i class="fa fa-times red"></i>'
                 + '  </a>'
                 + '</div>'
                 + '<input type="hidden" name="images[]" value="<%= src %>">'
@@ -91,7 +91,7 @@ define(['jquery', 'jquery-form', 'loadJSON'], function(){
             });
 
             // 3. 点击删除按钮,移除整个图片
-            $this.delegate('.icon-remove', 'click', function(){
+            $this.delegate('.fa-times', 'click', function(){
                 var parent = $(this).parents('li:first');
                 parent.fadeOut(function(){
                     parent.remove();
