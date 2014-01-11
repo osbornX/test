@@ -1,19 +1,19 @@
 ﻿/*
 * File:        jquery.loadJSON.js
 * Version:     1.2.5.
-* Author:      Jovan Popovic 
-* 
+* Author:      Jovan Popovic
+*
 * Copyright 2011 Jovan Popovic, all rights reserved.
 *
 * This source file is free software, under either the GPL v2 license or a
 * BSD style license, as supplied with this software.
-* 
-* This source file is distributed in the hope that it will be useful, but 
-* WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY 
-* or FITNESS FOR A PARTICULAR PURPOSE. 
+*
+* This source file is distributed in the hope that it will be useful, but
+* WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY
+* or FITNESS FOR A PARTICULAR PURPOSE.
 *
 * This file contains implementation of the JQuery templating engine that load JSON
-* objects into the HTML code. It is based on Alexandre Caprais notemplate plugin 
+* objects into the HTML code. It is based on Alexandre Caprais notemplate plugin
 * with several enchancements that are added to this plugin.
 */
 
@@ -297,13 +297,13 @@
         } //function browseJSON end
 
         function init(placeholder) {
-            if (placeholder.data("loadJSON-template") != null && placeholder.data("loadJSON-template") != "") {
-                var template = placeholder.data("loadJSON-template");
-                placeholder.html(template);
-            } else {
+            //if (placeholder.data("loadJSON-template") != null && placeholder.data("loadJSON-template") != "") {
+            //    var template = placeholder.data("loadJSON-template");
+            //    placeholder.html(template);
+            //} else {
                 var template = placeholder.html()
                 placeholder.data("loadJSON-template", template);
-            }
+            //}
         }
 
         var defaults = {
