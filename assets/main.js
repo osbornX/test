@@ -10,7 +10,7 @@ require.config({
         'template': 'components/artTemplate/template.min',
         'jquery-form': 'components/jquery-form/jquery.form',
         'loadJSON': 'components/jquery.loadJSON/index',
-        'appendGrid': 'components/jquery.appendGrid/jquery.appendGrid-1.2.0',
+        'jquery-appendGrid': 'components/jquery.appendGrid/jquery.appendGrid-1.2.0',
         'jquery-bbq': 'components/jquery-bbq/jquery.ba-bbq',
         'ueditor': 'components/ueditor/lang/zh-cn/zh-cn',
         'ueditor.all': 'components/ueditor/ueditor.all.min',
