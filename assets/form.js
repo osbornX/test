@@ -48,7 +48,7 @@ define(['jquery', 'jquery-form', 'loadJSON'], function(){
         require(['template'], function() {
             // TODO 如何分离
             var tmpl = '<li>'
-                + '<a href="<%= src %>" data-rel="colorbox" class="cboxElement">'
+                + '<a href="<%= src %>" data-rel="colorbox" class="cboxElement" target="_blank">'
                 + '  <img src="<%= src %>">'
                 + '</a>'
                 + '<div class="tools tools-bottom">'
