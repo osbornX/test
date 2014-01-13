@@ -81,6 +81,10 @@ function loadCss(url) {
     document.getElementsByTagName("head")[0].appendChild(link);
 }
 
+function isNumber(n) {
+    return !isNaN(parseFloat(n)) && isFinite(n);
+}
+
 jQuery(function ($) {
     $('#sidebar a.dropdown-toggle').click(function () {
         var index = $(this).parent().index();
