@@ -86,9 +86,9 @@ class Coupon extends Base
     	$userId = $this->request('userId');
     	$couponList = explode(',', $couponList);
     	foreach($couponList as $key => $value){
-    		$couponInfo = wei()->db('coupon')->where('id=?', $value)->fetch();
-    		$endTime = date('Y-m-d H:i:s', time() + $couponInfo['validDay'] * 24 * 60 * 60);
-    		wei()->coupon->sendCoupon($value, $userId, date('Y-m-d H:i:s'), $endTime);
+    		//$couponInfo = wei()->db('coupon')->where('id=?', $value)->fetch();
+    		//$endTime = date('Y-m-d H:i:s', time() + $couponInfo['validDay'] * 24 * 60 * 60);
+    		wei()->coupon->sendCoupon($value, $userId);
     	}
     	return $this->json('发送优惠券成功', 1);
     }
