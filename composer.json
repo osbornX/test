@@ -2,8 +2,9 @@
     "require": {
         "php": ">=5.3.0",
         "wei/wei": "dev-master",
-        "twinh/alipay-mobile": "*",
-        "twinh/tenpay-mobile": "*"
+        "twinh/alipay-mobile": "dev-master",
+        "twinh/tenpay-mobile": "dev-master",
+		"mrclay/minify": "*"
     },
     "autoload": {
         "psr-0": {
